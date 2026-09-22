@@ -57,6 +57,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                 class="_container_udcm8_10"
               >
                 <input
+                  checked=""
                   class="_input_udcm8_24"
                   id="mx_SettingsFlag_vY7Q4uEh9K38"
                   role="switch"
@@ -74,8 +75,14 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                 class="_label_1o4d9_60"
                 for="mx_SettingsFlag_vY7Q4uEh9K38"
               >
-                Enable desktop notifications for this session
+                Mark chats as read automatically while this session is active
               </label>
+              <span
+                class="_message_1o4d9_86 _help-message_1o4d9_92"
+                id="radix-react-use-id-2"
+              >
+                Turn off to stop this session from marking chats as read on your own, so notifications on your other sessions and devices aren't cleared until you actually read them there
+              </span>
             </div>
           </div>
           <div
@@ -105,7 +112,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                 class="_label_1o4d9_60"
                 for="mx_SettingsFlag_QgU2PomxwKpa"
               >
-                Show message preview in desktop notification
+                Enable desktop notifications for this session
               </label>
             </div>
           </div>
@@ -119,7 +126,6 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                 class="_container_udcm8_10"
               >
                 <input
-                  checked=""
                   class="_input_udcm8_24"
                   id="mx_SettingsFlag_6hpi3YEetmBG"
                   role="switch"
@@ -136,6 +142,38 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
               <label
                 class="_label_1o4d9_60"
                 for="mx_SettingsFlag_6hpi3YEetmBG"
+              >
+                Show message preview in desktop notification
+              </label>
+            </div>
+          </div>
+          <div
+            class="_inline-field_1o4d9_33"
+          >
+            <div
+              class="_inline-field-control_1o4d9_45"
+            >
+              <div
+                class="_container_udcm8_10"
+              >
+                <input
+                  checked=""
+                  class="_input_udcm8_24"
+                  id="mx_SettingsFlag_4yVCeEefiPqp"
+                  role="switch"
+                  type="checkbox"
+                />
+                <div
+                  class="_ui_udcm8_34"
+                />
+              </div>
+            </div>
+            <div
+              class="_inline-field-body_1o4d9_39"
+            >
+              <label
+                class="_label_1o4d9_60"
+                for="mx_SettingsFlag_4yVCeEefiPqp"
               >
                 Enable audible notifications for this session
               </label>
@@ -278,7 +316,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_4yVCeEefiP"
+                        id="checkbox_MRMwbPDmfG"
                         type="checkbox"
                       />
                       <div
@@ -304,7 +342,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_4yVCeEefiP"
+                      for="checkbox_MRMwbPDmfG"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -335,7 +373,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_qpMRMwbPDm"
+                        id="checkbox_tmGQvdMWe9"
                         type="checkbox"
                       />
                       <div
@@ -361,7 +399,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_qpMRMwbPDm"
+                      for="checkbox_tmGQvdMWe9"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -392,7 +430,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_fGtmGQvdMW"
+                        id="checkbox_54DVIAu5Cs"
                         type="checkbox"
                       />
                       <div
@@ -418,7 +456,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_fGtmGQvdMW"
+                      for="checkbox_54DVIAu5Cs"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -466,7 +504,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_e954DVIAu5"
+                        id="checkbox_iHRD7nyrA2"
                         type="checkbox"
                       />
                       <div
@@ -492,7 +530,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_e954DVIAu5"
+                      for="checkbox_iHRD7nyrA2"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -522,7 +560,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                       <input
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_CsiHRD7nyr"
+                        id="checkbox_ohjWVJIPau"
                         type="checkbox"
                       />
                       <div
@@ -548,7 +586,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_CsiHRD7nyr"
+                      for="checkbox_ohjWVJIPau"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -579,7 +617,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_A2ohjWVJIP"
+                        id="checkbox_y1OmnTidX4"
                         type="checkbox"
                       />
                       <div
@@ -605,7 +643,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_A2ohjWVJIP"
+                      for="checkbox_y1OmnTidX4"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -677,7 +715,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_auy1OmnTid"
+                        id="checkbox_ePDS0OpWwA"
                         type="checkbox"
                       />
                       <div
@@ -703,7 +741,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_auy1OmnTid"
+                      for="checkbox_ePDS0OpWwA"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -735,7 +773,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_X4ePDS0OpW"
+                        id="checkbox_HG75JNTNkN"
                         type="checkbox"
                       />
                       <div
@@ -761,7 +799,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_X4ePDS0OpW"
+                      for="checkbox_HG75JNTNkN"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -789,11 +827,11 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                       class="_container_153f2_10"
                     >
                       <input
-                        aria-describedby="react-use-id-2"
+                        aria-describedby="react-use-id-3"
                         checked=""
                         class="_input_153f2_18"
                         disabled=""
-                        id="checkbox_wAHG75JNTN"
+                        id="checkbox_U64raTLcRs"
                         type="checkbox"
                       />
                       <div
@@ -819,7 +857,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_wAHG75JNTN"
+                      for="checkbox_U64raTLcRs"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -829,7 +867,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                     </label>
                     <span
                       class="_message_1o4d9_86 _help-message_1o4d9_92"
-                      id="react-use-id-2"
+                      id="react-use-id-3"
                     >
                       Enter keywords here, or use for spelling variations or nicknames
                     </span>
@@ -891,7 +929,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                     <input
                       checked=""
                       class="_input_udcm8_24"
-                      id="mx_SettingsFlag_kNU64raTLcRs"
+                      id="mx_SettingsFlag_QRlYy75nfv5b"
                       role="switch"
                       type="checkbox"
                     />
@@ -905,7 +943,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                 >
                   <label
                     class="_label_1o4d9_60"
-                    for="mx_SettingsFlag_kNU64raTLcRs"
+                    for="mx_SettingsFlag_QRlYy75nfv5b"
                   >
                     Show all activity in the room list (dots or number of unread messages)
                   </label>
@@ -922,7 +960,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                   >
                     <input
                       class="_input_udcm8_24"
-                      id="mx_SettingsFlag_QRlYy75nfv5b"
+                      id="mx_SettingsFlag_OEPN1su1JYVt"
                       role="switch"
                       type="checkbox"
                     />
@@ -936,7 +974,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                 >
                   <label
                     class="_label_1o4d9_60"
-                    for="mx_SettingsFlag_QRlYy75nfv5b"
+                    for="mx_SettingsFlag_OEPN1su1JYVt"
                   >
                     Consider all new activity as an unread message
                   </label>
@@ -954,7 +992,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                     <input
                       checked=""
                       class="_input_udcm8_24"
-                      id="mx_SettingsFlag_OEPN1su1JYVt"
+                      id="mx_SettingsFlag_OyR5kbu3pEwu"
                       role="switch"
                       type="checkbox"
                     />
@@ -968,7 +1006,7 @@ exports[`<Notifications /> > correctly handles the loading/disabled state 1`] = 
                 >
                   <label
                     class="_label_1o4d9_60"
-                    for="mx_SettingsFlag_OEPN1su1JYVt"
+                    for="mx_SettingsFlag_OyR5kbu3pEwu"
                   >
                     Only show notifications in the thread activity centre
                   </label>
@@ -1115,6 +1153,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                 class="_container_udcm8_10"
               >
                 <input
+                  checked=""
                   class="_input_udcm8_24"
                   id="mx_SettingsFlag_vY7Q4uEh9K38"
                   role="switch"
@@ -1132,8 +1171,14 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                 class="_label_1o4d9_60"
                 for="mx_SettingsFlag_vY7Q4uEh9K38"
               >
-                Enable desktop notifications for this session
+                Mark chats as read automatically while this session is active
               </label>
+              <span
+                class="_message_1o4d9_86 _help-message_1o4d9_92"
+                id="radix-react-use-id-2"
+              >
+                Turn off to stop this session from marking chats as read on your own, so notifications on your other sessions and devices aren't cleared until you actually read them there
+              </span>
             </div>
           </div>
           <div
@@ -1163,7 +1208,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                 class="_label_1o4d9_60"
                 for="mx_SettingsFlag_QgU2PomxwKpa"
               >
-                Show message preview in desktop notification
+                Enable desktop notifications for this session
               </label>
             </div>
           </div>
@@ -1177,7 +1222,6 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                 class="_container_udcm8_10"
               >
                 <input
-                  checked=""
                   class="_input_udcm8_24"
                   id="mx_SettingsFlag_6hpi3YEetmBG"
                   role="switch"
@@ -1194,6 +1238,38 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
               <label
                 class="_label_1o4d9_60"
                 for="mx_SettingsFlag_6hpi3YEetmBG"
+              >
+                Show message preview in desktop notification
+              </label>
+            </div>
+          </div>
+          <div
+            class="_inline-field_1o4d9_33"
+          >
+            <div
+              class="_inline-field-control_1o4d9_45"
+            >
+              <div
+                class="_container_udcm8_10"
+              >
+                <input
+                  checked=""
+                  class="_input_udcm8_24"
+                  id="mx_SettingsFlag_4yVCeEefiPqp"
+                  role="switch"
+                  type="checkbox"
+                />
+                <div
+                  class="_ui_udcm8_34"
+                />
+              </div>
+            </div>
+            <div
+              class="_inline-field-body_1o4d9_39"
+            >
+              <label
+                class="_label_1o4d9_60"
+                for="mx_SettingsFlag_4yVCeEefiPqp"
               >
                 Enable audible notifications for this session
               </label>
@@ -1332,7 +1408,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       <input
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_OyR5kbu3pE"
+                        id="checkbox_Ln9EnnYuxf"
                         type="checkbox"
                       />
                       <div
@@ -1358,7 +1434,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_OyR5kbu3pE"
+                      for="checkbox_Ln9EnnYuxf"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1388,7 +1464,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       <input
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_wuLn9EnnYu"
+                        id="checkbox_FEpOsztWhQ"
                         type="checkbox"
                       />
                       <div
@@ -1414,7 +1490,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_wuLn9EnnYu"
+                      for="checkbox_FEpOsztWhQ"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1444,7 +1520,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       <input
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_xfFEpOsztW"
+                        id="checkbox_kBerF1ejc4"
                         type="checkbox"
                       />
                       <div
@@ -1470,7 +1546,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_xfFEpOsztW"
+                      for="checkbox_kBerF1ejc4"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1517,7 +1593,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       <input
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_hQkBerF1ej"
+                        id="checkbox_GFes1UFzOK"
                         type="checkbox"
                       />
                       <div
@@ -1543,7 +1619,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_hQkBerF1ej"
+                      for="checkbox_GFes1UFzOK"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1572,7 +1648,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                     >
                       <input
                         class="_input_153f2_18"
-                        id="checkbox_c4GFes1UFz"
+                        id="checkbox_2nvfGFMldL"
                         type="checkbox"
                       />
                       <div
@@ -1598,7 +1674,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_c4GFes1UFz"
+                      for="checkbox_2nvfGFMldL"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1628,7 +1704,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       <input
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_OK2nvfGFMl"
+                        id="checkbox_2r2vbsSwic"
                         type="checkbox"
                       />
                       <div
@@ -1654,7 +1730,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_OK2nvfGFMl"
+                      for="checkbox_2r2vbsSwic"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1725,7 +1801,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       <input
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_dL2r2vbsSw"
+                        id="checkbox_mKUiOBdvqs"
                         type="checkbox"
                       />
                       <div
@@ -1751,7 +1827,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_dL2r2vbsSw"
+                      for="checkbox_mKUiOBdvqs"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1782,7 +1858,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       <input
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_icmKUiOBdv"
+                        id="checkbox_xEaZtl3ANI"
                         type="checkbox"
                       />
                       <div
@@ -1808,7 +1884,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_icmKUiOBdv"
+                      for="checkbox_xEaZtl3ANI"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1836,10 +1912,10 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       class="_container_153f2_10"
                     >
                       <input
-                        aria-describedby="react-use-id-2"
+                        aria-describedby="react-use-id-3"
                         checked=""
                         class="_input_153f2_18"
-                        id="checkbox_qsxEaZtl3A"
+                        id="checkbox_iWzqsApP1c"
                         type="checkbox"
                       />
                       <div
@@ -1865,7 +1941,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <label
                       class="_label_1o4d9_60"
-                      for="checkbox_qsxEaZtl3A"
+                      for="checkbox_iWzqsApP1c"
                     >
                       <span
                         class="mx_LabelledCheckbox_label"
@@ -1875,7 +1951,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                     </label>
                     <span
                       class="_message_1o4d9_86 _help-message_1o4d9_92"
-                      id="react-use-id-2"
+                      id="react-use-id-3"
                     >
                       Enter keywords here, or use for spelling variations or nicknames
                     </span>
@@ -2151,7 +2227,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                     <input
                       checked=""
                       class="_input_udcm8_24"
-                      id="mx_SettingsFlag_kNU64raTLcRs"
+                      id="mx_SettingsFlag_QRlYy75nfv5b"
                       role="switch"
                       type="checkbox"
                     />
@@ -2165,7 +2241,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                 >
                   <label
                     class="_label_1o4d9_60"
-                    for="mx_SettingsFlag_kNU64raTLcRs"
+                    for="mx_SettingsFlag_QRlYy75nfv5b"
                   >
                     Show all activity in the room list (dots or number of unread messages)
                   </label>
@@ -2182,7 +2258,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                   >
                     <input
                       class="_input_udcm8_24"
-                      id="mx_SettingsFlag_QRlYy75nfv5b"
+                      id="mx_SettingsFlag_OEPN1su1JYVt"
                       role="switch"
                       type="checkbox"
                     />
@@ -2196,7 +2272,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                 >
                   <label
                     class="_label_1o4d9_60"
-                    for="mx_SettingsFlag_QRlYy75nfv5b"
+                    for="mx_SettingsFlag_OEPN1su1JYVt"
                   >
                     Consider all new activity as an unread message
                   </label>
@@ -2214,7 +2290,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                     <input
                       checked=""
                       class="_input_udcm8_24"
-                      id="mx_SettingsFlag_OEPN1su1JYVt"
+                      id="mx_SettingsFlag_OyR5kbu3pEwu"
                       role="switch"
                       type="checkbox"
                     />
@@ -2228,7 +2304,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                 >
                   <label
                     class="_label_1o4d9_60"
-                    for="mx_SettingsFlag_OEPN1su1JYVt"
+                    for="mx_SettingsFlag_OyR5kbu3pEwu"
                   >
                     Only show notifications in the thread activity centre
                   </label>
@@ -2296,7 +2372,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                       >
                         <input
                           class="_input_153f2_18"
-                          id="checkbox_NIiWzqsApP"
+                          id="checkbox_q1SIAPqLMV"
                           type="checkbox"
                         />
                         <div
@@ -2322,7 +2398,7 @@ exports[`<Notifications /> > matches the snapshot 1`] = `
                     >
                       <label
                         class="_label_1o4d9_60"
-                        for="checkbox_NIiWzqsApP"
+                        for="checkbox_q1SIAPqLMV"
                       >
                         <span
                           class="mx_LabelledCheckbox_label"
