@@ -317,6 +317,7 @@ export interface Settings {
     "urlPreviewsEnabled_e2ee_bundled_only": IBaseSetting<boolean>;
     "notificationsEnabled": IBaseSetting<boolean>;
     "deviceNotificationsEnabled": IBaseSetting<boolean>;
+    "enableReadReceiptsAndMarkersOnActivity": IBaseSetting<boolean>;
     "notificationSound": IBaseSetting<NotificationSound | false>;
     "notificationBodyEnabled": IBaseSetting<boolean>;
     "audioNotificationsEnabled": IBaseSetting<boolean>;
@@ -1183,6 +1184,12 @@ export const SETTINGS: Settings = {
         supportedLevels: [SettingLevel.DEVICE],
         default: true,
         displayName: _td("settings|notifications|enable_notifications_device"),
+    },
+    "enableReadReceiptsAndMarkersOnActivity": {
+        supportedLevels: LEVELS_ACCOUNT_SETTINGS,
+        default: true,
+        displayName: _td("settings|notifications|mark_read_on_activity"),
+        description: _td("settings|notifications|mark_read_on_activity_detail"),
     },
     "notificationSound": {
         supportedLevels: LEVELS_ROOM_OR_ACCOUNT,

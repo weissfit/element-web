@@ -101,6 +101,7 @@ interface IState {
     usageLimitEventContent?: IUsageLimit;
     usageLimitEventTs?: number;
     useCompactLayout: boolean;
+    enableReadReceiptsAndMarkersOnActivity: boolean;
     activeCalls: Array<MatrixCall>;
     backgroundImage?: string;
 }
@@ -121,6 +122,7 @@ class LoggedInView extends React.Component<IProps, IState> {
     protected readonly _roomView: React.RefObject<RoomView | null>;
     protected layoutWatcherRef?: string;
     protected compactLayoutWatcherRef?: string;
+    protected enableReadReceiptsAndMarkersOnActivityWatcherRef?: string;
     protected backgroundImageWatcherRef?: string;
     protected timezoneProfileUpdateRef?: string[];
 
@@ -136,6 +138,7 @@ class LoggedInView extends React.Component<IProps, IState> {
             syncErrorData: undefined,
             // use compact timeline view
             useCompactLayout: SettingsStore.getValue("useCompactLayout"),
+            enableReadReceiptsAndMarkersOnActivity: SettingsStore.getValue("enableReadReceiptsAndMarkersOnActivity"),
             usageLimitDismissed: false,
             activeCalls: context.legacyCallHandler.getAllActiveCalls(),
         };
@@ -167,6 +170,11 @@ class LoggedInView extends React.Component<IProps, IState> {
             "useCompactLayout",
             null,
             this.onCompactLayoutChanged,
+        );
+        this.enableReadReceiptsAndMarkersOnActivityWatcherRef = SettingsStore.watchSetting(
+            "enableReadReceiptsAndMarkersOnActivity",
+            null,
+            this.onEnableReadReceiptsAndMarkersOnActivityChanged,
         );
         this.backgroundImageWatcherRef = SettingsStore.watchSetting(
             "RoomList.backgroundImage",
@@ -235,6 +243,7 @@ class LoggedInView extends React.Component<IProps, IState> {
         OwnProfileStore.instance.off(UPDATE_EVENT, this.refreshBackgroundImage);
         SettingsStore.unwatchSetting(this.layoutWatcherRef);
         SettingsStore.unwatchSetting(this.compactLayoutWatcherRef);
+        SettingsStore.unwatchSetting(this.enableReadReceiptsAndMarkersOnActivityWatcherRef);
         SettingsStore.unwatchSetting(this.backgroundImageWatcherRef);
         this.timezoneProfileUpdateRef?.forEach((s) => SettingsStore.unwatchSetting(s));
         this.disposeResizerViewModel();
@@ -274,6 +283,14 @@ class LoggedInView extends React.Component<IProps, IState> {
     private onCompactLayoutChanged = (): void => {
         this.setState({
             useCompactLayout: SettingsStore.getValue("useCompactLayout"),
+        });
+    };
+
+    private onEnableReadReceiptsAndMarkersOnActivityChanged = (): void => {
+        this.setState({
+            enableReadReceiptsAndMarkersOnActivity: SettingsStore.getValue(
+                "enableReadReceiptsAndMarkersOnActivity",
+            ),
         });
     };
 
@@ -635,6 +652,7 @@ class LoggedInView extends React.Component<IProps, IState> {
                         key={this.props.currentRoomId || "roomview"}
                         justCreatedOpts={this.props.roomJustCreatedOpts}
                         forceTimeline={this.props.forceTimeline}
+                        enableReadReceiptsAndMarkersOnActivity={this.state.enableReadReceiptsAndMarkersOnActivity}
                     />
                 );
                 break;

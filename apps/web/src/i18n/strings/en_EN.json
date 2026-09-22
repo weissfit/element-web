@@ -2745,6 +2745,8 @@
             "keywords_prompt": "Enter keywords here, or use for spelling variations or nicknames",
             "labs_notice_error": "Your notification settings could not be updated",
             "labs_notice_prompt": "<strong>Update:</strong>We’ve simplified Notifications Settings to make options easier to find. Some custom settings you’ve chosen in the past are not shown here, but they’re still active. If you proceed, some of your settings may change. <a>Learn more</a>",
+            "mark_read_on_activity": "Mark chats as read automatically while this session is active",
+            "mark_read_on_activity_detail": "Turn off to stop this session from marking chats as read on your own, so notifications on your other sessions and devices aren't cleared until you actually read them there",
             "mentions_keywords": "Mentions and Keywords",
             "mentions_keywords_only": "Mentions and Keywords only",
             "messages_containing_keywords": "Messages containing keywords",
