@@ -288,9 +288,7 @@ class LoggedInView extends React.Component<IProps, IState> {
 
     private onEnableReadReceiptsAndMarkersOnActivityChanged = (): void => {
         this.setState({
-            enableReadReceiptsAndMarkersOnActivity: SettingsStore.getValue(
-                "enableReadReceiptsAndMarkersOnActivity",
-            ),
+            enableReadReceiptsAndMarkersOnActivity: SettingsStore.getValue("enableReadReceiptsAndMarkersOnActivity"),
         });
     };
 
