@@ -725,6 +725,8 @@ export default class Notifications extends React.PureComponent<EmptyObject, ISta
 
                     <SettingsFlag name="deviceNotificationsEnabled" level={SettingLevel.DEVICE} />
 
+                    <SettingsFlag name="enableReadReceiptsAndMarkersOnActivity" level={SettingLevel.ACCOUNT} />
+
                     {this.state.deviceNotificationsEnabled && (
                         <>
                             <SettingsFlag name="notificationsEnabled" level={SettingLevel.DEVICE} />

@@ -2187,7 +2187,8 @@ export class RoomView extends React.Component<IRoomProps, IRoomState> {
      * Handles the focus event on the RoomView component.
      *
      * Sends read receipts and updates the read marker if the
-     * disableReadReceiptsAndMarkersOnActivity prop is set.
+     * enableReadReceiptsAndMarkersOnActivity prop is unset, since in that
+     * case they are not otherwise kept up to date continuously while active.
      */
     private onFocus = (): void => {
         if (this.props.enableReadReceiptsAndMarkersOnActivity) return;

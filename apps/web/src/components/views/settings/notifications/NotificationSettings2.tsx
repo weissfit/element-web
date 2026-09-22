@@ -137,6 +137,7 @@ export default function NotificationSettings2(): JSX.Element {
                             });
                         }}
                     />
+                    <SettingsFlag name="enableReadReceiptsAndMarkersOnActivity" level={SettingLevel.ACCOUNT} />
                     <SettingsFlag name="notificationsEnabled" level={SettingLevel.DEVICE} />
                     <SettingsFlag
                         name="notificationBodyEnabled"
